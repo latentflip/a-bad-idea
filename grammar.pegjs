@@ -9,7 +9,7 @@ start
 
 targetBlock
     = target:targetLine actions:(actionLine / blankLine)*
-    { return { target: target, actions: filterNull(actions) } }
+    { return { target: target.file, dependencies: target.dependencies, actions: filterNull(actions) } }
     
 
 targetLine

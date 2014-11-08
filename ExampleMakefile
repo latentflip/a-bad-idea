@@ -1,3 +1,0 @@
-foo.js:
-	echo "hello" > foo.js
-	mv foo.js bar.js
